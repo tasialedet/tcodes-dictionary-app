@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+}
+.SearchedWord {
+  font-size: 45px;
+  margin-right: 10px;
+}
+.Dictionary {
+  max-width: 1000px;
+  max-height: 1750px;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin-left: 40px;
+  padding: 20px;
+}
+.phonetics {
+  color: gray;
+  font-size: 29px;
+  position: relative;
+  top: -4px;
+}
+.partOfSpeech {
+  font-style: italic;
+}
+.divider {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
