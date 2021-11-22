@@ -1,5 +1,10 @@
 import React from "react";
 
 export default function Phonetic(props) {
-  return <h3>{props.phonetic.text}</h3>;
+  return (
+    <div className="Phonetic">
+      <span className="phoneticText">{props.phonetic.text}</span> 
+      <a className="phoneticAudio" href={props.phonetic.audio} target="blank"> Click to listen </a> 
+    </div>
+  );
 }
