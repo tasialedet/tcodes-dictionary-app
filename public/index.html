@@ -50,9 +50,6 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div id="target">
-      <div id="icon-patterns__overlay"></div>
-    </div>
 
     <!--
       This HTML file is a template.
@@ -64,33 +61,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://unpkg.com/icon-patterns/dist/icon-patterns.min.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script>
-      new IconPatterns(document.getElementbyID("target"), {
-        color: "#d9dad7",
-        icons: {
-          "ion-icon-library-outline": {
-            count: 10,
-            sizeVariation: [10, 20],
-          },
-          "ion-icon-pencil-outline": {
-            count: 10,
-            sizeVariation: [5, 15],
-          },
-          "ion-icon-search-outline": {
-            count: 15,
-            sizeVariation: [10, 25],
-          },
-        },
-      }).draw();
-    </script>
   </body>
 </html>
