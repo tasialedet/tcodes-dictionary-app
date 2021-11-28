@@ -21,6 +21,15 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.cssfrel="stylesheet"
+    type="text/css" />
+    <link
+      href="https://unpkg.com/icon-patterns/dist/icon-patterns.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -41,6 +50,10 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="target">
+      <div id="icon-patterns__overlay"></div>
+    </div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -51,5 +64,33 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://unpkg.com/icon-patterns/dist/icon-patterns.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      new IconPatterns(document.getElementbyID("target"), {
+        color: "#d9dad7",
+        icons: {
+          "ion-icon-library-outline": {
+            count: 10,
+            sizeVariation: [10, 20],
+          },
+          "ion-icon-pencil-outline": {
+            count: 10,
+            sizeVariation: [5, 15],
+          },
+          "ion-icon-search-outline": {
+            count: 15,
+            sizeVariation: [10, 25],
+          },
+        },
+      }).draw();
+    </script>
   </body>
 </html>

@@ -3,10 +3,9 @@ import "./App.css";
 import Images from "./Images";
 import Search from "./Search";
 
-
 function App() {
   return (
-    <div className="Dictionary">
+    <div className="Dictionary" id="targetDictionary">
       <h1>Dictionary</h1>
       <p>What word would you like to look up?</p>
       <Search defaultWord="ram" />
