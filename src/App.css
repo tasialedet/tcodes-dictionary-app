@@ -8,10 +8,12 @@ h1 {
 .Dictionary {
   max-width: 1000px;
   max-height: 1750px;
-  border: solid 2px black;
+  border: solid 2px #2e94b9;
   border-radius: 10px;
   margin-left: 40px;
   padding: 20px;
+  background-color: #f0fbff;
+  overflow: auto;
 }
 .phonetics {
   color: gray;
