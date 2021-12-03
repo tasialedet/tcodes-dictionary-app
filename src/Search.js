@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Images from "./Images";
+import "./Search.css";
 
 export default function Search(props) {
   let [newWord, setNewWord] = useState(null);
@@ -56,6 +57,7 @@ export default function Search(props) {
         </div>
       </form>
       <Results results={results} />
+      <hr />
       <Images images={images} />
     </div>
   );

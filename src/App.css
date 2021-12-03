@@ -1,5 +1,9 @@
 h1 {
   text-align: center;
+  font-size: 34px;
+}
+p {
+  font-size: 19px;
 }
 .SearchedWord {
   font-size: 45px;
