@@ -1,32 +1,24 @@
 import React from "react";
-import blank from "./blank.png";
 import "./Images.css";
 
-export default function Images() {
-  return (
-    <div className="images">
-      <div className="container">
-        <div class="row align-items-start">
-          <div className="col-4">
-            <img src={blank} alt="..." className="img-thumbnail"></img>
-          </div>
-          <div className="col-4">
-            <img src={blank} alt="..." className="img-thumbnail"></img>
-          </div>
-          <div className="col-4">
-            <img src={blank} alt="..." className="img-thumbnail"></img>
-          </div>
-          <div className="col-4">
-            <img src={blank} alt="..." className="img-thumbnail"></img>
-          </div>
-          <div className="col-4">
-            <img src={blank} alt="..." className="img-thumbnail"></img>
-          </div>
-          <div className="col-4">
-            <img src={blank} alt="..." className="img-thumbnail"></img>
-          </div>
+export default function Images(props) {
+  if (props.images) {
+    return (
+      <section className="Images">
+        <div className="row">
+          {props.images.map(function (image, index) {
+            return (
+              <div className="col-4" key={index}>
+                <a href={image.src.original} target="_blank" rel="noreferrer">
+                  <img src={image.src.landscape} className="img-fluid" alt="" />
+                </a>
+              </div>
+            );
+          })}
         </div>
-      </div>
-    </div>
-  );
+      </section>
+    );
+  } else {
+    return null;
+  }
 }
