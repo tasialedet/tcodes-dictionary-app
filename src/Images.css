@@ -1,12 +1,6 @@
-.img-thumbnail {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 15px;
-  background-color: #acdcee;
-  border: 2px solid #2e94b9;
-}
-.images {
+#image.col-4 {
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
