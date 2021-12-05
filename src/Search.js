@@ -56,6 +56,9 @@ export default function Search(props) {
           </button>
         </div>
       </form>
+      <p className="suggested">
+        Suggested words: ram, butterfly, moon, pizza, spring
+      </p>
       <Results results={results} />
       <hr />
       <Images images={images} />

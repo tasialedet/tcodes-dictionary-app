@@ -2,3 +2,24 @@
   margin-bottom: 15px;
   font-size: 20px;
 }
+.phoneticAudio {
+  text-decoration: none;
+  color: #475154;
+}
+.phoneticAudio:hover {
+  color: #ffffff;
+  transition: all 400ms ease-in-out;
+}
+.phoneticAudioButton {
+  border-radius: .25rem;
+  background-color: #f0fcff;
+  border-width: 1px;
+}
+.phoneticAudioButton:hover {
+  background-color: #475154;
+  transition: all 400ms ease-in-out;
+}
+.phoneticText {
+  margin-right: 5px;
+  font-size: 23px;
+}

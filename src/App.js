@@ -6,9 +6,8 @@ function App() {
   return (
     <div className="Dictionary" id="targetDictionary">
       <h1>Dictionary</h1>
-      <p>What word would you like to look up?</p>
-      <Search defaultWord="ram" />
-
+      <p className="intro">What word would you like to look up?</p>
+      <Search defaultWord="warm" />
       <p>
         Created & Open-Sourced by Tasia Ledet on{" "}
         <a

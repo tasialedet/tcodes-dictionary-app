@@ -6,3 +6,6 @@ li + li::before {
   display: inline;
   content: ",";
 }
+ul {
+  padding: 0;
+}

@@ -1,3 +1,7 @@
 .form-control {
   font-size: 18px;
 }
+.suggested {
+  font-weight: normal;
+  font-size:medium;
+}

@@ -4,11 +4,11 @@ import "./Synonym.css";
 export default function Synonym(props) {
   if (props.synonym) {
     return (
-      <div className="Synonym">
+      <ul className="Synonym">
         {props.synonym.map(function (synonym, index) {
-          return <li key={index}> {synonym} </li>;
+          return <li key={index}> {synonym}</li>;
         })}
-      </div>
+      </ul>
     );
   } else {
     return null;
